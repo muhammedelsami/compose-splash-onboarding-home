@@ -1,9 +1,7 @@
-package com.muhammed.composesplashonboarhomeproject
+package com.muhammed.composesplashonboarhomeproject.presentation.onboarding
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -34,6 +32,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.muhammed.composesplashonboarhomeproject.data.datastore.DataStoreManager
+import com.muhammed.composesplashonboarhomeproject.presentation.onboarding.OnboardingPage
+import com.muhammed.composesplashonboarhomeproject.R
 import kotlinx.coroutines.launch
 
 @Composable

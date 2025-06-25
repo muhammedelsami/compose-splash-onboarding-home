@@ -1,4 +1,4 @@
-package com.muhammed.composesplashonboarhomeproject
+package com.muhammed.composesplashonboarhomeproject.presentation.navigation
 
 object Routes {
     const val SPLASH = "splash"

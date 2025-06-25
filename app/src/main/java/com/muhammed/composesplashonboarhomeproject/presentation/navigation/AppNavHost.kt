@@ -1,9 +1,12 @@
-package com.muhammed.composesplashonboarhomeproject
+package com.muhammed.composesplashonboarhomeproject.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.muhammed.composesplashonboarhomeproject.presentation.home.HomeScreen
+import com.muhammed.composesplashonboarhomeproject.presentation.onboarding.OnboardingScreen
+import com.muhammed.composesplashonboarhomeproject.presentation.splash.SplashScreen
 
 @Composable
 fun AppNavHost(startDestination: String = Routes.SPLASH) {
@@ -11,7 +14,13 @@ fun AppNavHost(startDestination: String = Routes.SPLASH) {
 
     NavHost(navController = navController, startDestination = startDestination) {
         composable(Routes.SPLASH) {
-            SplashScreen(onNavigate = { navController.navigate(it) { popUpTo(Routes.SPLASH) { inclusive = true } } })
+            SplashScreen(onNavigate = {
+                navController.navigate(it) {
+                    popUpTo(Routes.SPLASH) {
+                        inclusive = true
+                    }
+                }
+            })
         }
         composable(Routes.ONBOARDING) {
             OnboardingScreen(onFinish = {

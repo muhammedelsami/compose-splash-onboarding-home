@@ -1,4 +1,4 @@
-package com.muhammed.composesplashonboarhomeproject
+package com.muhammed.composesplashonboarhomeproject.presentation.onboarding
 
 data class OnboardingPage(
     val title: String,

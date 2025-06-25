@@ -1,6 +1,7 @@
 package com.muhammed.composesplashonboarhomeproject
 
 import android.app.Application
+import com.muhammed.composesplashonboarhomeproject.data.datastore.DataStoreManager
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp

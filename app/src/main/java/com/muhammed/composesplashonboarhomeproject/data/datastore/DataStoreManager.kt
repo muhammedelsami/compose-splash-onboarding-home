@@ -1,4 +1,4 @@
-package com.muhammed.composesplashonboarhomeproject
+package com.muhammed.composesplashonboarhomeproject.data.datastore
 
 import android.annotation.SuppressLint
 import android.content.Context
