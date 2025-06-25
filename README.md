@@ -1,0 +1,2 @@
+# compose-splash-onboarding-home
+A modern Android Jetpack Compose application demonstrating splash screen, onboarding flow, and home screen navigation with DataStore persistence. Built with a single-activity architecture, navigation component.
