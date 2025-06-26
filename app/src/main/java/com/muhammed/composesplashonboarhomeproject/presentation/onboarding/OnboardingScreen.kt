@@ -28,6 +28,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -35,6 +36,7 @@ import androidx.compose.ui.unit.sp
 import com.muhammed.composesplashonboarhomeproject.data.datastore.DataStoreManager
 import com.muhammed.composesplashonboarhomeproject.presentation.onboarding.OnboardingPage
 import com.muhammed.composesplashonboarhomeproject.R
+import com.muhammed.composesplashonboarhomeproject.utils.LogUtils
 import kotlinx.coroutines.launch
 
 @Composable
@@ -58,6 +60,7 @@ fun OnboardingScreen(onFinish: () -> Unit) {
     )
     var page by remember { mutableIntStateOf(0) }
     val coroutineScope = rememberCoroutineScope()
+    val context = LocalContext.current
 
     Surface(
         modifier = Modifier.fillMaxSize(),
@@ -124,6 +127,7 @@ fun OnboardingScreen(onFinish: () -> Unit) {
                 Button(
                     onClick = {
                         if (page < pages.lastIndex) {
+                            LogUtils.writeLog(context, "Kullanıcı giriş yaptı." + " Sayfa: ${page + 1}")
                             page++
                         } else {
                             coroutineScope.launch {
