@@ -54,7 +54,6 @@ fun HomeScreen() {
             Spacer(modifier = Modifier.height(8.dp))
 
             // checkbox to toggle onboarding seen state
-            // This is a placeholder for the checkbox functionality
             onboardingSeen?.let { seen ->
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
@@ -83,15 +82,3 @@ fun HomeScreen() {
         }
     }
 }
-
-//@Composable
-//fun HomeScreen() {
-//    Box(
-//        modifier = Modifier
-//            .fillMaxSize()
-//            .background(Color.White),
-//        contentAlignment = Alignment.Center
-//    ) {
-//        Text("Home Screen", fontSize = 24.sp, fontWeight = FontWeight.Bold)
-//    }
-//}
