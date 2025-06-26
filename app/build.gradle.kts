@@ -59,19 +59,20 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation("androidx.navigation:navigation-compose:2.9.0")
+    // compose navigation
+    implementation(libs.androidx.navigation.compose)
 
     // data store
-    implementation("androidx.datastore:datastore-preferences:1.1.7")
+    implementation(libs.androidx.datastore.preferences)
 
     // hilt navigation compose
-    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    implementation(libs.androidx.hilt.navigation.compose)
 
     // hilt
-    implementation("com.google.dagger:hilt-android:2.56.2")
-    kapt("com.google.dagger:hilt-android-compiler:2.56.2")
-    implementation("androidx.room:room-runtime:2.7.2")
-    kapt("androidx.room:room-compiler:2.7.2")
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
 
 
 }
